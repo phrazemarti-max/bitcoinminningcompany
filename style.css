@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080b0e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  background: #101519;
+  border-bottom: 1px solid #292929;
+}
+
+.logo {
+  color: #d6a84d;
+  font-weight: bold;
+}
+
+.logo span {
+  display: block;
+  font-size: 10px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+button {
+  background: #d6a84d;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f2c66c;
+}
+
+.hero {
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 10%;
+  background: radial-gradient(circle at 80%, #332819, #080b0e 55%);
+}
+
+.hero h1 {
+  font-size: 45px;
+  max-width: 550px;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #d6a84d;
+}
+
+.hero p {
+  color: #aaa;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.tag {
+  color: #d6a84d !important;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.bitcoin {
+  font-size: 180px;
+  color: #d6a84d;
+  border: 4px solid #d6a84d;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 60px #d6a84d30;
+}
+
+.markets, .about, .dashboard {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.markets h2, .about h2, .dashboard h2 {
+  margin-bottom: 35px;
+}
+
+.market-grid, .features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.market, .features div {
+  background: #141a1e;
+  padding: 30px;
+  border: 1px solid #292f33;
+  border-radius: 10px;
+}
+
+.market h2 {
+  color: #d6a84d;
+  margin: 20px 0;
+}
+
+.market p, .features p {
+  color: #999;
+  margin-top: 12px;
+}
+
+.market span {
+  color: #32d58a;
+}
+
+.disclaimer {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.features h3 {
+  color: #d6a84d;
+}
+
+.balance {
+  background: #151c20;
+  max-width: 500px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 10px;
+  border: 1px solid #d6a84d;
+}
+
+.balance h1 {
+  color: #d6a84d;
+  margin: 20px 0;
+}
+
+.balance p {
+  color: #aaa;
+}
+
+.actions {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logout {
+  margin-top: 25px;
+  background: #333;
+  color: white;
+}
+
+#message {
+  color: #d6a84d;
+}
+
+.login-box {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #000d;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-content {
+  background: #141a1e;
+  padding: 35px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.login-content h2 {
+  margin-bottom: 15px;
+  color: #d6a84d;
+}
+
+.login-content p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.login-content input {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  background: #080b0e;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+}
+
+.login-content form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: none;
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  background: #101519;
+  padding: 35px;
+  color: #999;
+  line-height: 2;
+}
+
+footer h3 {
+  color: #d6a84d;
+}
+
+@media(max-width: 700px) {
+  header {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .bitcoin {
+    width: 160px;
+    height: 160px;
+    font-size: 110px;
+  }
+
+  .market-grid, .features {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
